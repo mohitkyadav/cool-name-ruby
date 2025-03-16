@@ -23,6 +23,10 @@ jobs:
       - name: "Build gem"
         run: gem build cool_name_gen.gemspec
       - name: "Publish gem"
-        run: gem push cool_name_gen-*.gem
+        run: |
+          mkdir -p $HOME/.gem
+          echo -e "---\n:rubygems_api_key: ${RUBYGEMS_API_KEY}" > $HOME/.gem/credentials
+          chmod 0600 $HOME/.gem/credentials
+          gem push cool_name_gen-*.gem
         env:
           RUBYGEMS_API_KEY: ${{ secrets.RUBYGEMS_API_KEY }}
