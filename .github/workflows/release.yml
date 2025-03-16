@@ -1,0 +1,28 @@
+name: "Publish gem"
+on:
+  push:
+    branches:
+      - main
+    tags:
+      - "v*" # Push events to matching v*, like v1.0.0
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Checkout repo"
+        uses: "actions/checkout@v2"
+        with:
+          fetch-depth: 0
+      - name: "Setup Ruby"
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 3.3.4
+          bundler-cache: true
+      - name: "Bundle install"
+        run: bundle install
+      - name: "Build gem"
+        run: gem build cool_name_gen.gemspec
+      - name: "Publish gem"
+        run: gem push cool_name_gen-*.gem
+        env:
+          RUBYGEMS_API_KEY: ${{ secrets.RUBYGEMS_API_KEY }}
