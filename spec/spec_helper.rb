@@ -1,5 +1,6 @@
 # frozen_string_literal: true
-
+require "simplecov"
+SimpleCov.start
 require "cool_name_gen"
 
 RSpec.configure do |config|

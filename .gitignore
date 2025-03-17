@@ -14,3 +14,7 @@
 *.gem
 *.rbc
 .bundle
+
+.DS_Store
+
+coverage
