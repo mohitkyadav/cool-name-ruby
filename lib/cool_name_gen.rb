@@ -10,4 +10,8 @@ module CoolNameGen
   def self.to_alphanumeric(name)
     name.downcase.chars.map { |char| CharMappings::CHAR_TO_NUM_MAP[char] || char }.join
   end
+
+  def self.to_square(name)
+    name.downcase.chars.map { |char| CharMappings::CHAR_TO_SQUARE_MAP[char] || char }.join
+  end
 end

@@ -12,4 +12,8 @@ RSpec.describe CoolNameGen do
   it "transforms string to alphanumeric" do
     expect(CoolNameGen.to_alphanumeric("mohit")).to eq("m0h!t")
   end
+
+  it "transforms string to square" do
+    expect(CoolNameGen.to_square("mohit")).to eq("🄼🄾🄷🄸🅃")
+  end
 end
