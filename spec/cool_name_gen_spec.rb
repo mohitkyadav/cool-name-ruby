@@ -5,7 +5,15 @@ RSpec.describe CoolNameGen do
     expect(CoolNameGen::VERSION).not_to be nil
   end
 
-  it "does something useful" do
-    expect(false).to eq(true)
+  # it "does something useful" do
+  #   expect(false).to eq(true)
+  # end
+
+  it "transforms string to alphanumeric" do
+    expect(CoolNameGen.to_alphanumeric("mohit")).to eq("m0h!t")
+  end
+
+  it "transforms string to square" do
+    expect(CoolNameGen.to_square("mohit")).to eq("🄼🄾🄷🄸🅃")
   end
 end

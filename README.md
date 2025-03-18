@@ -1,5 +1,7 @@
 # CoolNameGen
 
+[![Gem Version](https://badge.fury.io/rb/cool_name_gen.svg?icon=si%3Arubygems)](https://badge.fury.io/rb/cool_name_gen)
+
 Generate cool names from boring latin characters.
 
 ## Installation

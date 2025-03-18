@@ -1,0 +1,6 @@
+module CoolNameGen
+  module CharMappings
+    CHAR_TO_NUM_MAP: hash[string, string]
+    CHAR_TO_SQUARE_MAP: hash[string, string]
+  end
+end

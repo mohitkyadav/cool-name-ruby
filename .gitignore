@@ -9,3 +9,12 @@
 
 # rspec failure tracking
 .rspec_status
+
+# gem development
+*.gem
+*.rbc
+.bundle
+
+.DS_Store
+
+coverage

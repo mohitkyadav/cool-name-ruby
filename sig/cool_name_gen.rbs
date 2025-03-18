@@ -1,4 +1,7 @@
 module CoolNameGen
   VERSION: String
   # See the writing guide of rbs: https://github.com/ruby/rbs#guides
+  def self.to_alphanumeric: -> string
+
+  def self.to_square: -> string
 end
