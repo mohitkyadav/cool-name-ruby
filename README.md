@@ -21,6 +21,9 @@ require "cool_name_gen"
 
 CoolNameGen.to_alphanumeric("mohit")
 CoolNameGen.to_square("mohit")
+CoolNameGen.to_rounded("mohit")
+CoolNameGen.to_up_side_down("mohit")
+CoolNameGen.to_mathematical_fraktur("mohit")
 ```
 
 ## Contributing

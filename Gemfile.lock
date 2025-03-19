@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    cool_name_gen (0.3.0)
+    cool_name_gen (0.4.0)
 
 GEM
   remote: https://rubygems.org/

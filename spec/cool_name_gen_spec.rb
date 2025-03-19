@@ -20,4 +20,12 @@ RSpec.describe CoolNameGen do
   it "transforms string to rounded" do
     expect(CoolNameGen.to_rounded("mohit")).to eq("ⓜⓞⓗⓘⓣ")
   end
+
+  it "transforms string to up side down" do
+    expect(CoolNameGen.to_up_side_down("mohit")).to eq("ɯoɥᴉʇ")
+  end
+
+  it "transform string to mathematical fraktur" do
+    expect(CoolNameGen.to_mathematical_fraktur("mohit")).to eq("𝔐𝔒ℌℑ𝔗")
+  end
 end

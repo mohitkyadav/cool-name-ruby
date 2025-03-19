@@ -18,4 +18,12 @@ module CoolNameGen
   def self.to_rounded(name)
     name.downcase.chars.map { |char| CharMappings::CHAR_TO_ROUNDED_MAP[char] || char }.join
   end
+
+  def self.to_up_side_down(name)
+    name.downcase.chars.map { |char| CharMappings::CHAR_TO_UP_SIDE_DOWN_MAP[char] || char }.join
+  end
+
+  def self.to_mathematical_fraktur(name)
+    name.downcase.chars.map { |char| CharMappings::CHAR_TO_MATHEMATICAL_FRAKTUR_MAP[char] || char }.join
+  end
 end

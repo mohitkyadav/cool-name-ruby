@@ -1,7 +1,9 @@
 module CoolNameGen
   module CharMappings
+    CHAR_TO_MATHEMATICAL_FRAKTUR_MAP: hash[string, string]
     CHAR_TO_NUM_MAP: hash[string, string]
     CHAR_TO_ROUNDED_MAP: hash[string, string]
     CHAR_TO_SQUARE_MAP: hash[string, string]
+    CHAR_TO_UP_SIDE_DOWN_MAP: hash[string, string]
   end
 end

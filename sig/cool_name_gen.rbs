@@ -3,7 +3,11 @@ module CoolNameGen
   # See the writing guide of rbs: https://github.com/ruby/rbs#guides
   def self.to_alphanumeric: -> string
 
+  def self.to_mathematical_fraktur: -> string
+
   def self.to_rounded: -> string
 
   def self.to_square: -> string
+
+  def self.to_up_side_down: -> string
 end
