@@ -14,4 +14,8 @@ module CoolNameGen
   def self.to_square(name)
     name.downcase.chars.map { |char| CharMappings::CHAR_TO_SQUARE_MAP[char] || char }.join
   end
+
+  def self.to_rounded(name)
+    name.downcase.chars.map { |char| CharMappings::CHAR_TO_ROUNDED_MAP[char] || char }.join
+  end
 end

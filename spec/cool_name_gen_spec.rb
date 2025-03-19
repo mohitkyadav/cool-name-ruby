@@ -16,4 +16,8 @@ RSpec.describe CoolNameGen do
   it "transforms string to square" do
     expect(CoolNameGen.to_square("mohit")).to eq("🄼🄾🄷🄸🅃")
   end
+
+  it "transforms string to rounded" do
+    expect(CoolNameGen.to_rounded("mohit")).to eq("ⓜⓞⓗⓘⓣ")
+  end
 end
